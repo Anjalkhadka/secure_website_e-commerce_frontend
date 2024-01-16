@@ -10,8 +10,7 @@ import { getAllOrdersOfAdmin } from "../../redux/actions/order";
 import Loader from "../Layout/Loader";
 import { getAllSellers } from "../../redux/actions/sellers";
 
-const AdminDashboardMain = () => {
-  const dispatch = useDispatch();
+
 
   const { adminOrders,adminOrderLoading } = useSelector((state) => state.order);
   const { sellers } = useSelector((state) => state.seller);
